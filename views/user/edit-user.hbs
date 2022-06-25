@@ -1,0 +1,18 @@
+{{!--Cunado manadmos archivos es necesario agregar la propiedad enctype="multipart/fomr-data"---}}
+
+
+<form action="/user/edit-myUser" method="post" enctype="multipart/forma-data">
+  <label for="">Nombre</label>
+  <input type="text" name="name" value="{{name}}" />
+
+  <label for="">Username</label>
+  <input type="text" name="username" value="{{username}}" />
+
+  <label for="">Email</label>
+  <input type="text" name="email" value="{{email}}" disabled />
+
+  <label for="">Profile Pic</label>
+  <input type="file" name="profile_pic" />
+
+  <button type="submit">Enviar</button>
+</form>
